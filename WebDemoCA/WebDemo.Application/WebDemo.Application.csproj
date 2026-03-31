@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Abstractions\" />
+      <Folder Include="Common\Models\" />
+      <Folder Include="Features\Products\Commands\DeleteProduct\" />
+      <Folder Include="Features\Products\Commands\UpdateProduct\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WebDemo.Domain\WebDemo.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="12.1.1" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+      <PackageReference Include="MediatR" Version="14.1.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.14" />
+    </ItemGroup>
+
+</Project>
